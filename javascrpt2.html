@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<script>src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+function birthday()
+{
+var a=document.getElementById('b').value;
+var i=0;
+while(i<a)
+{
+document.body.style.backgroundColor="#003151";
+document.write("<h2>Happy-Birth-Day</h2>");
+i=i+1;
+}
+}
+$document.ready(function()
+{
+$('button').click(function()
+{
+$("#x").fadeTo("slow",0.2);
+$("#y").fadeTo("slow",0.1);
+$("#z").fadeTo("slow",0.3);
+});
+});
+</script>
+<head>
+<style>
+h2
+{
+color:orange;
+}
+body
+{
+background-color:#003151;
+padding-top:50px;
+}
+.birth
+{
+border-radius:4px;
+border:none;
+color:white;
+background-color:orange;
+width:35%;
+height:230px;
+padding-left:5px;
+padding-right:5px;
+float:center;
+}
+input[type="text"],input[type="date"]
+{
+width:40%;
+height:35px;
+border-radius:5px;
+border:none;
+}
+input[type="submit"]
+{
+width:100px;
+height:30px;
+border-radius:4px;
+border:none;
+background-color:#003151;
+color:white;
+}
+#but
+{
+width:auto;
+color:white;
+height:30px;
+border-radius:4px;
+border:none;
+background-color:orange;
+}
+#x
+{
+width:100px;
+height:100px;
+background-color:white;
+border-radius:5px;
+}
+#y
+{
+width:100px;
+height:100px;
+background-color:yellow;
+border-radius:5px;
+}
+#z
+{
+width:100px;
+height:100px;
+background-color:green;
+border-radius:5px;
+}
+</style>
+</head>
+<body>
+<center>
+<div class="birth">
+<form><br>
+Name &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" id="a" placeholder="Enter your name"><br><br>
+Age &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" id="b" placeholder="age"><br><br>
+Date-of-Birth <input type="date" id="c" placeholder="Date-of-Birth"><br><br>
+<input type="submit" onclick="birthday()" placeholder="Login" value="submit"><br><br>
+</form>
+</div>
+</center>
+<button id="but">click here to fade</button><br><br>
+<div id="x"></div><br>
+<div id="y"></div><br>
+<div id="z"></div>
+</body>
+</html>
